@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Predicción inversa con TensorFlow.js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Predicción de x a partir de y = 2x² - 3x + 1</h1>
+    <button onclick="entrenarModelo()">Entrenar Modelo</button>
+    <div id="estadoEntrenamiento"></div>
+
+    <hr />
+
+    <label for="valorY">Ingresa un valor de y:</label>
+    <input type="number" id="valorY" value="5" step="any" />
+    <button onclick="predecirX()">Predecir x</button>
+
+    <div id="resultado"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="script.js"></script>
+</body>
+</html>
